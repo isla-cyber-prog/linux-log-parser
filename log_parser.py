@@ -41,6 +41,6 @@ def analyze_logs(log_file_path):
     except FileNotFoundError:
         print(f"[-] Operational Error: Log file '{log_file_path}' could not be located.")
 
-if _name_ == "_main_":
-    # Point to the local mock log file
-    analyze_logs("auth.log")
+# Directly call the function without the underscore guard blocks
+analyse_logs("auth.log")
+
